@@ -25,3 +25,15 @@ run application:
 'no module named...'
 
 remember to use 'flask shell'
+
+when you are developing your app, you can use debug mode, like so:
+
+    export FLASK_DEBUG=1
+
+run a dummy email server in a second terminal session :
+
+    (venv) $ python -m smtpd -n -c DebuggingServer localhost:8025
+
+***
+
+to make a multi line comment, use triple quotes -> ''' comment '''
