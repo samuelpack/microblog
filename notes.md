@@ -13,6 +13,10 @@ install Flask (and extensions) into virtual env:
     pip install flask-sqlalchemy
     pip install flask-migrate
     pip install flask-login
+    pip install flask-mail
+    pip install pyjwt
+    pip install flask-bootstrap
+    pip install flask-moment
 
 tell flask how to import by setting the FLASK_APP env variable:
     export FLASK_APP=<filename.py>
