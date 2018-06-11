@@ -16,3 +16,5 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['packmac2@gmail.com']
     POSTS_PER_PAGE = 13
+    # LANGUAGES IS FOR TUTORIAL DEMO ONLY...I DO NOT SPEAK SPANISH #
+    LANGUAGES = ['en', 'es']

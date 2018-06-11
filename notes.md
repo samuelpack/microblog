@@ -17,6 +17,7 @@ install Flask (and extensions) into virtual env:
     pip install pyjwt
     pip install flask-bootstrap
     pip install flask-moment
+    pip install flask-babel
 
 tell flask how to import by setting the FLASK_APP env variable:
     export FLASK_APP=<filename.py>
@@ -41,3 +42,6 @@ run a dummy email server in a second terminal session :
 ***
 
 to make a multi line comment, use triple quotes -> ''' comment '''
+
+
+### add an alert so that people dont think you can speak spanish ###

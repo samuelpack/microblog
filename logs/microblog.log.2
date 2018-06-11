@@ -1,0 +1,121 @@
+2018-06-10 11:58:05,505 INFO: Microblog startup [in /Users/sampack/microblog/app/__init__.py:47]
+2018-06-10 12:06:52,023 INFO: Microblog startup [in /Users/sampack/microblog/app/__init__.py:47]
+2018-06-11 08:46:02,784 INFO: Microblog startup [in /Users/sampack/microblog/app/__init__.py:47]
+2018-06-11 08:52:36,829 INFO: Microblog startup [in /Users/sampack/microblog/app/__init__.py:47]
+2018-06-11 09:35:01,471 INFO: Microblog startup [in /Users/sampack/microblog/app/__init__.py:49]
+2018-06-11 09:35:11,177 ERROR: Exception on / [GET] [in /Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/sampack/microblog/app/routes.py", line 37, in index
+    return render_template('index.html', title='Home', form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/sampack/microblog/app/templates/base.html", line 45, in template
+    {% endfor %} {% endif %} {% endwith %} {# application content needs to be provided in the app_content block #} {% block app_content
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "/Users/sampack/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %} {% import 'bootstrap/wtf.html' as wtf %} {% block app_content %}
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/sampack/microblog/app/templates/base.html", line 45, in template
+    {% endfor %} {% endif %} {% endwith %} {# application content needs to be provided in the app_content block #} {% block app_content
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 543, in _generate
+    optimized=self.optimized)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/compiler.py", line 82, in generate
+    generator.visit(node)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/visitor.py", line 38, in visit
+    return f(node, *args, **kwargs)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/compiler.py", line 718, in visit_Template
+    self.fail('block %r defined twice' % block.name, block.lineno)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/compiler.py", line 315, in fail
+    raise TemplateAssertionError(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateAssertionError: block 'app_content' defined twice
+2018-06-11 09:36:39,015 INFO: Microblog startup [in /Users/sampack/microblog/app/__init__.py:49]
+2018-06-11 09:36:47,579 ERROR: Exception on / [GET] [in /Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/sampack/microblog/app/routes.py", line 37, in index
+    return render_template('index.html', title='Home', form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/sampack/microblog/app/templates/base.html", line 45, in template
+    {% endfor %} {% endif %} {% endwith %} {% application content needs to be provided in the app_content block #} {% block app_content
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "/Users/sampack/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %} {% import 'bootstrap/wtf.html' as wtf %} {% block app_content %}
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/sampack/microblog/app/templates/base.html", line 45, in template
+    {% endfor %} {% endif %} {% endwith %} {% application content needs to be provided in the app_content block #} {% block app_content
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "/Users/sampack/microblog/venv/lib/python3.5/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'application'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2018-06-11 09:37:31,745 INFO: Microblog startup [in /Users/sampack/microblog/app/__init__.py:49]
